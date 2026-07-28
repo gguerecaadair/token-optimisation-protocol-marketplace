@@ -1,7 +1,7 @@
 {
   "name": "efficient-excellence",
   "displayName": "Efficient Excellence — model routing",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Opus triages every request and routes each sub-task to the right model tier: top models (Opus, Fable) at full reasoning depth for hard work; fast models (Sonnet, Haiku) for the routine.",
   "author": { "name": "Gillespie Guereca Adair" },
   "keywords": ["routing", "model-selection", "orchestration", "agents", "cost"]

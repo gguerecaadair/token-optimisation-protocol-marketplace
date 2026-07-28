@@ -2,7 +2,7 @@
 name: reviewer
 description: Verification pass on important work before it ships — checking a change does what it should, hunting correctness bugs, and confirming claims against evidence. Defaults to Opus for routine verification; invoke with model fable for high-stakes or subtle-correctness passes. Reviews and reports; does not edit.
 tools: Read, Grep, Glob, Bash
-model: claude-opus-5
+model: opus
 effort: xhigh
 ---
 

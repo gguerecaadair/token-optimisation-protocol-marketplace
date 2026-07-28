@@ -42,5 +42,7 @@ Installing bundles the five routing agents (scout, worker, heavy-worker, planner
 
 ## Notes
 
+- **Check the tiers actually took.** If a model isn't available on your plan or org allowlist, Claude Code **silently** runs your main model instead — no error, and the routing quietly collapses to one tier. After your first run, check `/usage` to confirm more than one model appears.
+
 - Claude Code only (not claude.ai). Config is per-machine.
 - Start a **new chat** after installing for it to take effect.

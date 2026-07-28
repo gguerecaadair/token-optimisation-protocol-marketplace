@@ -21,7 +21,9 @@ The **Opus** hub triages every request: break it into sub-tasks, and for each pi
 
 ## Triage rules
 1. **Tier zero first.** Before assigning any model, ask if the sub-task is deterministic (top row). If so, write and run code — zero tokens. Reach for a model only when the work needs judgement or generation. Usually the biggest single saving, especially for anything that recurs.
-2. **Then: simple → cheap** (Sonnet); **complex → high quality** (Fable; hard code → Opus). When unsure, escalate — a wasted premium call beats a shallow result shipped.
+2. **Then: simple → cheap** (Sonnet); **complex → high quality** (Fable; hard code → Opus). When unsure **on a judgement-hard sub-task**, escalate — a wasted premium call beats a shallow result shipped.
+2b. **Don't over-delegate** (recent Opus models delegate more readily, and spokes cold-read at full rate — every spawn has a fixed cost floor). Do it inline if a handful of tool calls finishes it, or the files are already in context. **Never delegate verification of a spoke's own work.** Cap parallel spawns at ~4 unless the fan-out is genuinely independent.
+2c. **Write tight.** Recent models run longer by default and effort does not reliably shorten output — ask for length explicitly. No filler sections, redundant summaries or boilerplate.
 3. **Verify by reading, don't re-derive.** Where ground truth is already in files, check claims by reading them — don't spend an agent to re-compute what you can read.
 4. **Checkpoint long runs.** Write each sub-result to disk as it returns and skip completed steps on resume — never let an interruption re-run finished work.
 5. **Pin the model on every delegation.** A `CLAUDE_CODE_SUBAGENT_MODEL` env var, if ever set, silently overrides all pins and flattens every tier onto one model — keep it unset.
