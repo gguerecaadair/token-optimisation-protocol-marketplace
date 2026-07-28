@@ -3,7 +3,7 @@
 A developer-facing account of the Efficient Excellence routing: what it is, the mechanism, and the sharp edges. Accurate to current Claude Code docs; version-gated behaviour is flagged.
 
 ## Model
-Hub-and-spoke over Claude Code subagents. One **orchestrator** (main loop, Opus 4.8) + five subagents in `agents/*.md` (frontmatter: `name`, `description`, `tools`, `model`, `effort`; body = system prompt) — plus a **tier zero that isn't a model at all**. Each non-fork subagent runs in its own context window.
+Hub-and-spoke over Claude Code subagents. One **orchestrator** (main loop, Opus 5) + five subagents in `agents/*.md` (frontmatter: `name`, `description`, `tools`, `model`, `effort`; body = system prompt) — plus a **tier zero that isn't a model at all**. Each non-fork subagent runs in its own context window.
 
 ## The core idea: route the *work*, not just the model
 The hub triages each request and, for every sub-task, picks the cheapest thing that still does it excellently — **starting with "does this need a model?"** Deterministic work (collection, parsing, merges, counting, dedup, format conversion, tests) is done in plain code at **zero tokens**. Only judgement or generation reaches a model.
@@ -13,7 +13,7 @@ The hub triages each request and, for every sub-task, picks the cheapest thing t
 | Deterministic (collection, parse, merge, count, dedup, tests) | **plain code — no model, 0 tokens** |
 | Read-only discovery, find/trace across files, summarising docs | Sonnet 5 (low) — scout |
 | Tables, routine edits, straightforward code, tests | Sonnet 5 (medium) — worker |
-| Triage, synthesis, hard/correctness-sensitive code | Opus 4.8 — hub · heavy-worker |
+| Triage, synthesis, hard/correctness-sensitive code | Opus 5 — hub · heavy-worker |
 | Plans, architecture, adversarial/methodology review | Fable — planner |
 | Verification before ship | Opus (Fable high-stakes) — reviewer |
 

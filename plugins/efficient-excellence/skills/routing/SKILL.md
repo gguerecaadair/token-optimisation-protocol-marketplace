@@ -13,9 +13,9 @@ The **Opus** hub triages every request: break it into sub-tasks, and for each pi
 | Deterministic work — collection, parsing, merge, counting, dedup, format conversion, tests | **Plain code, no model (tier zero — 0 tokens)** |
 | Read-only discovery, find/trace across files, summarising docs | **Sonnet 5** (low) — scout |
 | Tables, formatting, simple Q&A, routine edits, straightforward code | **Sonnet 5** (medium) — worker |
-| Triage, synthesis, hard/correctness-sensitive code | **Opus 4.8** — hub · heavy-worker |
+| Triage, synthesis, hard/correctness-sensitive code | **Opus 5** — hub · heavy-worker |
 | Plans, architecture, adversarial & methodology review, complex synthesis, hard decisions | **Fable** — planner |
-| Verification before ship | **Opus** / **Fable** (high-stakes) — reviewer |
+| Verification before ship | **Opus 5** / **Fable** (high-stakes) — reviewer |
 
 *(Haiku isn't in the default ladder: the truly mechanical work is tier zero, and discovery needs Sonnet's relevance judgement rather than the weakest model on the job that feeds every downstream plan. Reach for Haiku only via an explicit `model: haiku` override for very high-volume, low-stakes bulk triage.)*
 

@@ -1,7 +1,7 @@
 ---
 name: heavy-worker
-description: Implementation that needs deeper reasoning than Sonnet — tricky algorithms, subtle state or concurrency, gnarly debugging, or changes spanning many interacting pieces where correctness is hard. Runs on Opus 4.8 at xhigh effort. Reserve for work that genuinely exceeds the worker; most hands-on tasks should stay on the worker.
-model: opus
+description: Implementation that needs deeper reasoning than Sonnet — tricky algorithms, subtle state or concurrency, gnarly debugging, or changes spanning many interacting pieces where correctness is hard. Runs on Opus 5 at xhigh effort. Reserve for work that genuinely exceeds the worker; most hands-on tasks should stay on the worker.
+model: claude-opus-5
 effort: xhigh
 ---
 
