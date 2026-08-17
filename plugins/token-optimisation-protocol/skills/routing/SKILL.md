@@ -1,9 +1,9 @@
 ---
 name: routing
-description: Model-routing policy for efficient excellence. Use at the start of a task to triage it — decide how to split the work and which tier does each part. First ask if a sub-task is deterministic (do it in plain code, no model, zero tokens); then simple → Sonnet, complex → Fable/Opus.
+description: Model-routing policy for Token Optimisation Protocol. Use at the start of a task to triage it — decide how to split the work and which tier does each part. First ask if a sub-task is deterministic (do it in plain code, no model, zero tokens); then simple → Sonnet, complex → Fable/Opus.
 ---
 
-# Efficient excellence — route the work, not just the model
+# Token Optimisation Protocol — route the work, not just the model
 
 The **Opus** hub triages every request: break it into sub-tasks, and for each pick the cheapest thing that still does it *excellently* — starting with "does this need a model at all?" Quality drives; cost is saved by not over-spending on the easy parts, never by under-serving the hard parts.
 

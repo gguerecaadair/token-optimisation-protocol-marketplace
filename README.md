@@ -1,6 +1,6 @@
 # VSE EDU BM — Claude Code plugins
 
-A Claude Code plugin marketplace. Currently ships one plugin: **Efficient Excellence** — Opus-triaged model routing.
+A Claude Code plugin marketplace. Currently ships one plugin: **Token Optimisation Protocol** — Opus-triaged model routing.
 
 ## Install
 
@@ -8,11 +8,11 @@ From an interactive `claude` session (or the desktop app):
 
 ```
 /plugin marketplace add gguerecaadair/efficient-excellence-marketplace
-/plugin install efficient-excellence@vse-edu-bm-plugins
+/plugin install token-optimisation-protocol@vse-edu-bm-plugins
 ```
 
 - Swap the first line for a local path if you have the folder synced, e.g. `/plugin marketplace add "C:\path\to\efficient-excellence-marketplace"`.
-- CLI equivalents: `claude plugin marketplace add ...` then `claude plugin install efficient-excellence@vse-edu-bm-plugins`.
+- CLI equivalents: `claude plugin marketplace add ...` then `claude plugin install token-optimisation-protocol@vse-edu-bm-plugins`.
 - If `claude plugin ...` reports a git "unsafe location" error, run it from `C:\` rather than your home directory.
 
 Installing bundles the five routing agents (scout, worker, heavy-worker, planner, reviewer) and the `routing` skill.
@@ -25,12 +25,12 @@ Installing bundles the five routing agents (scout, worker, heavy-worker, planner
    ```
    This makes the Opus hub run at full reasoning depth. Agent-level effort overrides it, so the cheap tiers stay economical.
 
-2. **(Optional) Cost meter** — copy `plugins/efficient-excellence/statusline.py` to `~/.claude/statusline.py`, then add to `settings.json`:
+2. **(Optional) Cost meter** — copy `plugins/token-optimisation-protocol/statusline.py` to `~/.claude/statusline.py`, then add to `settings.json`:
    ```json
    { "statusLine": { "type": "command", "command": "python C:\\Users\\<you>\\.claude\\statusline.py" } }
    ```
 
-3. **(Optional) Always-on policy** — the routing behaviour comes from the agents automatically. To make the full triage posture always-on, paste the contents of the `routing` skill into your `~/.claude/CLAUDE.md`; otherwise invoke it per task with `/efficient-excellence:routing`.
+3. **(Optional) Always-on policy** — the routing behaviour comes from the agents automatically. To make the full triage posture always-on, paste the contents of the `routing` skill into your `~/.claude/CLAUDE.md`; otherwise invoke it per task with `/token-optimisation-protocol:routing`.
 
 ## What bundles vs. what you set
 

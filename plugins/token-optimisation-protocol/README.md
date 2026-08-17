@@ -1,4 +1,4 @@
-# Efficient Excellence — model routing
+# Token Optimisation Protocol — model routing
 
 Opus triages every request and routes each sub-task to the cheapest tier that still does it excellently — **starting with "does this need a model at all?"** Deterministic work goes to plain code; the heavy thinking goes to the strongest models at full depth; the routine parts go to fast, economical ones.
 

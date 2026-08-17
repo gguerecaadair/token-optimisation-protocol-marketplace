@@ -1,4 +1,4 @@
-# Efficient Excellence — a plain-English guide
+# Token Optimisation Protocol — a plain-English guide
 
 For colleagues who use AI every day but don't write code. No jargon — just what it does, how it works, and why it's cheaper.
 
@@ -9,7 +9,7 @@ A Claude Code plugin that automatically uses the *right* AI model for each part 
 1. Open **Claude Code** and paste these two lines. (Opening the repo link in a browser doesn't install it — these commands do.)
    ```
    /plugin marketplace add gguerecaadair/efficient-excellence-marketplace
-   /plugin install efficient-excellence@vse-edu-bm-plugins
+   /plugin install token-optimisation-protocol@vse-edu-bm-plugins
    ```
 2. Set your main model to **Opus** — type `/model` and pick Opus. This is the "coordinator" that routes everything.
 3. **Start a fresh chat.** That's it — it runs automatically, with nothing to switch on per task.
@@ -32,7 +32,7 @@ Every request goes first to a **coordinator** (the Opus model). It reads what yo
 You don't choose any of this — the coordinator does it for you.
 
 ## Why it's efficient (the token optimisation, in plain terms)
-AI is billed by the "token" (roughly ¾ of a word), for everything the model reads *and* writes. Two facts drive the whole design:
+AI is billed by the "token" (about half a word), for everything the model reads *and* writes. Two facts drive the whole design:
 
 - **The best models cost several times more per token.** The top tier is roughly 5–10× the price of the cheap one. So the trick isn't "use less AI" — it's *don't spend the expensive models on easy work.* Point them at the hard 20%; let the cheap model and plain code carry the rest.
 - **A conversation re-reads its whole history on every step — and you're billed for it each time.** So if a huge document sits in the main conversation, you pay to re-read it again and again as the task goes on. By reading big documents in isolated side tasks and only bringing back a short summary, the main conversation stays light — and the bill stays small.

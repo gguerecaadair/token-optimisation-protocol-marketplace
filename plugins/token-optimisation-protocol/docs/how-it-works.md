@@ -1,6 +1,6 @@
 # How it works — technical explainer
 
-A developer-facing account of the Efficient Excellence routing: what it is, the mechanism, and the sharp edges. Accurate to current Claude Code docs; version-gated behaviour is flagged.
+A developer-facing account of the Token Optimisation Protocol routing: what it is, the mechanism, and the sharp edges. Accurate to current Claude Code docs; version-gated behaviour is flagged.
 
 ## Model
 Hub-and-spoke over Claude Code subagents. One **orchestrator** (main loop, Opus 5) + five subagents in `agents/*.md` (frontmatter: `name`, `description`, `tools`, `model`, `effort`; body = system prompt) — plus a **tier zero that isn't a model at all**. Each non-fork subagent runs in its own context window.

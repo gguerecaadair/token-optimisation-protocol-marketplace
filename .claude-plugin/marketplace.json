@@ -4,8 +4,8 @@
   "description": "Internal Claude Code plugins for the ViewSonic EDU BM team.",
   "plugins": [
     {
-      "name": "efficient-excellence",
-      "source": "./plugins/efficient-excellence",
+      "name": "token-optimisation-protocol",
+      "source": "./plugins/token-optimisation-protocol",
       "description": "Opus-triaged model routing — top models at full depth for hard work, fast models for the routine."
     }
   ]
