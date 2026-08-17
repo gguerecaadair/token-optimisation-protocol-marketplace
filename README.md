@@ -7,11 +7,11 @@ A Claude Code plugin marketplace. Currently ships one plugin: **Token Optimisati
 From an interactive `claude` session (or the desktop app):
 
 ```
-/plugin marketplace add gguerecaadair/efficient-excellence-marketplace
+/plugin marketplace add gguerecaadair/token-optimisation-protocol-marketplace
 /plugin install token-optimisation-protocol@vse-edu-bm-plugins
 ```
 
-- Swap the first line for a local path if you have the folder synced, e.g. `/plugin marketplace add "C:\path\to\efficient-excellence-marketplace"`.
+- Swap the first line for a local path if you have the folder synced, e.g. `/plugin marketplace add "C:\path\to\token-optimisation-protocol-marketplace"`.
 - CLI equivalents: `claude plugin marketplace add ...` then `claude plugin install token-optimisation-protocol@vse-edu-bm-plugins`.
 - If `claude plugin ...` reports a git "unsafe location" error, run it from `C:\` rather than your home directory.
 

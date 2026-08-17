@@ -8,7 +8,7 @@ A Claude Code plugin that automatically uses the *right* AI model for each part 
 ## How to install and use
 1. Open **Claude Code** and paste these two lines. (Opening the repo link in a browser doesn't install it — these commands do.)
    ```
-   /plugin marketplace add gguerecaadair/efficient-excellence-marketplace
+   /plugin marketplace add gguerecaadair/token-optimisation-protocol-marketplace
    /plugin install token-optimisation-protocol@vse-edu-bm-plugins
    ```
 2. Set your main model to **Opus** — type `/model` and pick Opus. This is the "coordinator" that routes everything.
